@@ -30,7 +30,9 @@ export default function Footer(props) {
               <Brand />
             </div>
             <div className="col-4 align-self-center ml-auto">
-              <p className="">Copyright DBELF 2020. All Rights Reserved.</p>
+              <div className="text-copyright ml-auto">
+                Copyright DBELF 2020. All Rights Reserved.
+              </div>
             </div>
           </div>
         </div>

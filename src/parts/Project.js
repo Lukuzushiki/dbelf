@@ -16,15 +16,19 @@ export default function Project(props) {
             <img className="img-project" src={Sahabat} alt="project-1" />
           </div>
           <div className="col-6">
-            <h1>Improving the experience of Sahabat Lawyer application</h1>
-            <a href="https://play.google.com/store/apps/details?id=com.sahabatlawyer">
-              Visit Google Playstore
-            </a>
+            <div className="card-detail">
+              <h1>Improving the experience of Sahabat Lawyer application</h1>
+              <a href="https://play.google.com/store/apps/details?id=com.sahabatlawyer">
+                Visit Google Playstore
+              </a>
+            </div>
           </div>
 
           <div className="col-6">
-            <h1>Design and development Staycation website</h1>
-            <a href="https://staycation-topaz.vercel.app/">Visit Website</a>
+            <div className="card-detail">
+              <h1>Design and development Staycation website</h1>
+              <a href="https://staycation-topaz.vercel.app/">Visit Website</a>
+            </div>
           </div>
           <div className="col-6">
             <img className="img-project" src={Staycation} alt="project-1" />
@@ -34,10 +38,12 @@ export default function Project(props) {
             <img className="img-project" src={Gaming} alt="project-1" />
           </div>
           <div className="col-6">
-            <h1>Improving the experience of Sahabat Lawyer application</h1>
-            <a href="https://gaming-house-onwgjrgdd.vercel.app/">
-              Visit Website
-            </a>
+            <div className="card-detail">
+              <h1>Improving the experience of Sahabat Lawyer application</h1>
+              <a href="https://gaming-house-onwgjrgdd.vercel.app/">
+                Visit Website
+              </a>
+            </div>
           </div>
         </div>
       </div>

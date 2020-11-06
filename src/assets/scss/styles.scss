@@ -5,7 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@400;500;600;800&family=Space+Grotesk:wght@700&display=swap");
+@import "container-grid";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -49,6 +50,11 @@
   font-weight: 800;
   color: $gray-900;
   font-family: "Poppins", sans-serif;
+  span {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 65px;
+    color: $yellow;
+  }
   &:hover {
     text-decoration: none;
     color: $gray-900;
@@ -133,7 +139,6 @@ header {
 .section-project {
   padding: 0 70px;
   background-color: #f5f6f8;
-  display: inline-flex;
   .text-center {
     h2 {
       padding: 100px 0;
@@ -149,20 +154,28 @@ header {
     margin-bottom: 140px;
   }
 
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 200px;
-  }
+  .card-detail {
+    display: grid;
+    height: 410px;
 
-  a {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: $gray-900;
-    text-decoration: underline;
-    align-self: end;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: $gray-900;
+      text-decoration: underline;
+      align-self: end;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -181,6 +194,7 @@ header {
     border-radius: 0px;
     border-color: none;
     margin-bottom: 70px;
+    border: solid 0px;
     .card-body {
       background-color: #f5f6f8;
       padding: 55px 16px 78px 16px;
@@ -288,10 +302,11 @@ footer {
 
   .copyright {
     background-color: $gray-200;
-    p {
+    .text-copyright {
       font-family: "Poppins", sans-serif;
       font-size: 14px;
       font-weight: 600;
+      text-align: end;
       text-decoration: underline;
     }
   }

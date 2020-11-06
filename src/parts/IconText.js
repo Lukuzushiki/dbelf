@@ -5,7 +5,7 @@ import Button from "elements/Button";
 export default function iconText() {
   return (
     <Button className="brand-text-icon" href="" type="link">
-      DBELF
+      DBELF<span>.</span>
     </Button>
   );
 }
