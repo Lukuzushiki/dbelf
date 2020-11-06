@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Zoom from "react-reveal/Zoom";
 
 import Header from "parts/Header";
 import Navbar from "parts/Navbar";
@@ -25,7 +26,9 @@ export default class LandingPages extends Component {
           refContact={this.refContact}
           refAbout={this.refAbout}
         />
-        <Header {...this.props} />
+        <Zoom>
+          <Header {...this.props} />
+        </Zoom>
         <Project
           {...this.props}
           data={Data.project}
