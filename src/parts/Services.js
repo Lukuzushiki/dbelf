@@ -1,4 +1,6 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import Mobile from "../assets/images/mobile.png";
 import Website from "../assets/images/website.png";
 import UiUx from "../assets/images/uiux.png";
@@ -13,51 +15,61 @@ export default function Project() {
         </div>
 
         <div className="row">
-          <div className="col-4">
-            <div className="card">
-              <div className="card-body">
-                <img className="img-service" src={Mobile} alt="service-1" />
-                <h1>Mobile app development</h1>
-                <p>
-                  We help you to develop mobile application for your business
-                </p>
+          <Fade bottom delay={500}>
+            <div className="col-4">
+              <div className="card">
+                <div className="card-body">
+                  <img className="img-service" src={Mobile} alt="service-1" />
+                  <h1>Mobile app development</h1>
+                  <p>
+                    We help you to develop mobile application for your business
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-4">
-            <div className="card">
-              <div className="card-body">
-                <img className="img-service" src={Website} alt="service-1" />
-                <h1>Mobile app development</h1>
-                <p>
-                  We help you to develop mobile application for your business
-                </p>
+          </Fade>
+
+          <Fade top delay={1000}>
+            <div className="col-4">
+              <div className="card">
+                <div className="card-body">
+                  <img className="img-service" src={Website} alt="service-1" />
+                  <h1>Mobile app development</h1>
+                  <p>
+                    We help you to develop mobile application for your business
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-4">
-            <div className="card">
-              <div className="card-body">
-                <img className="img-service" src={UiUx} alt="service-1" />
-                <h1>Mobile app development</h1>
-                <p>
-                  We help you to develop mobile application for your business
-                </p>
+          </Fade>
+
+          <Fade bottom delay={1500}>
+            <div className="col-4">
+              <div className="card">
+                <div className="card-body">
+                  <img className="img-service" src={UiUx} alt="service-1" />
+                  <h1>Mobile app development</h1>
+                  <p>
+                    We help you to develop mobile application for your business
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
 
         <div className="text-center">
-          <Button
-            className="btn px-4 py-3"
-            type="button"
-            href=""
-            isPrimary
-            isLight
-          >
-            Let’s talk together
-          </Button>
+          <Zoom delay={1800}>
+            <Button
+              className="btn px-4 py-3"
+              type="button"
+              href=""
+              isPrimary
+              isLight
+            >
+              Let’s talk together
+            </Button>
+          </Zoom>
         </div>
       </div>
     </section>

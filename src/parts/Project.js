@@ -1,7 +1,5 @@
 import React from "react";
-import Sahabat from "../assets/images/sahabatLawyer.png";
-import Gaming from "../assets/images/gaminghouse.png";
-import Staycation from "../assets/images/staycation.png";
+import Fade from "react-reveal/Fade";
 
 export default function Project(props) {
   return (
@@ -12,39 +10,45 @@ export default function Project(props) {
         </div>
 
         <div className="row">
-          <div className="col-6">
-            <img className="img-project" src={Sahabat} alt="project-1" />
-          </div>
-          <div className="col-6">
-            <div className="card-detail">
-              <h1>Improving the experience of Sahabat Lawyer application</h1>
-              <a href="https://play.google.com/store/apps/details?id=com.sahabatlawyer">
-                Visit Google Playstore
-              </a>
-            </div>
-          </div>
+          {props.data.map((project, index) => {
+            return (
+              <>
+                <Fade bottom delay={500}>
+                  <div className="col-6">
+                    {index % 2 === 0 ? (
+                      <img
+                        className="img-project"
+                        src={project.imageUrl}
+                        alt={`project-${[index]}`}
+                      />
+                    ) : (
+                      <div className="card-detail">
+                        <h1>{project.title}</h1>
+                        <a href={project.urlProject}>{project.urlChild}</a>
+                      </div>
+                    )}
+                  </div>
+                </Fade>
 
-          <div className="col-6">
-            <div className="card-detail">
-              <h1>Design and development Staycation website</h1>
-              <a href="https://staycation-topaz.vercel.app/">Visit Website</a>
-            </div>
-          </div>
-          <div className="col-6">
-            <img className="img-project" src={Staycation} alt="project-1" />
-          </div>
-
-          <div className="col-6">
-            <img className="img-project" src={Gaming} alt="project-1" />
-          </div>
-          <div className="col-6">
-            <div className="card-detail">
-              <h1>Improving the experience of Sahabat Lawyer application</h1>
-              <a href="https://gaming-house-onwgjrgdd.vercel.app/">
-                Visit Website
-              </a>
-            </div>
-          </div>
+                <Fade bottom delay={1000}>
+                  <div className="col-6">
+                    {index % 2 === 1 ? (
+                      <img
+                        className="img-project"
+                        src={project.imageUrl}
+                        alt={`project-${[index]}`}
+                      />
+                    ) : (
+                      <div className="card-detail">
+                        <h1>{project.title}</h1>
+                        <a href={project.urlProject}>{project.urlChild}</a>
+                      </div>
+                    )}
+                  </div>
+                </Fade>
+              </>
+            );
+          })}
         </div>
       </div>
     </section>

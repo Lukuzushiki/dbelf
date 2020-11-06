@@ -7,6 +7,8 @@ import Services from "parts/Services";
 import Profile from "parts/Profile";
 import Footer from "parts/Footer";
 
+import Data from "json/projectData.json";
+
 export default class LandingPages extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,11 @@ export default class LandingPages extends Component {
           refAbout={this.refAbout}
         />
         <Header {...this.props} />
-        <Project {...this.props} refProject={this.refProject} />
+        <Project
+          {...this.props}
+          data={Data.project}
+          refProject={this.refProject}
+        />
         <Services {...this.props} />
         <Profile {...this.props} refAbout={this.refAbout} />
         <Footer {...this.props} refContact={this.refContact} />

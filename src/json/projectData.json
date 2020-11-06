@@ -1,0 +1,22 @@
+{
+    "project": [
+        {
+            "title" : "Improving the experience of Sahabat Lawyer application",
+            "urlProject" : "https://play.google.com/store/apps/details?id=com.sahabatlawyer",
+            "imageUrl" : "/images/sahabatLawyer.png",
+            "urlChild" : "Visit Google Playstore"
+        },
+        {
+            "title" : "Design and development Staycation website",
+            "urlProject" : "https://staycation-topaz.vercel.app/",
+            "imageUrl" : "/images/staycation.png",
+            "urlChild" : "Visit Website"
+        },
+        {
+            "title" : "Design and development GamingHouse website",
+            "urlProject" : "https://gaming-house-onwgjrgdd.vercel.app/",
+            "imageUrl" : "/images/gaminghouse.png",
+            "urlChild" : "Visit Website"
+        }
+    ]
+}
