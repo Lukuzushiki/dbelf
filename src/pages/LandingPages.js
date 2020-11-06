@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Navbar from "parts/Navbar";
 import Header from "parts/Header";
+import Navbar from "parts/Navbar";
 import Project from "parts/Project";
 import Services from "parts/Services";
 import Profile from "parts/Profile";
@@ -18,15 +18,16 @@ export default class LandingPages extends Component {
     return (
       <>
         <Navbar
+          {...this.props}
           refProject={this.refProject}
           refContact={this.refContact}
           refAbout={this.refAbout}
         />
-        <Header />
-        <Project refProject={this.refProject} />
-        <Services />
-        <Profile refAbout={this.refAbout} />
-        <Footer refContact={this.refContact} />
+        <Header {...this.props} />
+        <Project {...this.props} refProject={this.refProject} />
+        <Services {...this.props} />
+        <Profile {...this.props} refAbout={this.refAbout} />
+        <Footer {...this.props} refContact={this.refContact} />
       </>
     );
   }
