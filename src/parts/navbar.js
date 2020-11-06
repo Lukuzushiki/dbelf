@@ -2,7 +2,6 @@ import React from "react";
 
 import Button from "elements/Button";
 import Brand from "./IconText";
-import Logo from "../assets/images/logo.svg";
 
 export default function Header(props) {
   function showProject() {

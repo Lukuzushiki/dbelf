@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../elements/Button";
 
 import Fadli from "../assets/images/fotofadli.png";
 import Febri from "../assets/images/febri.png";
