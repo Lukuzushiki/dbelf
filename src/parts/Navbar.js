@@ -21,12 +21,6 @@ export default function Header(props) {
     });
   }
 
-  function showContact() {
-    window.scrollTo({
-      top: props.refContact.current.offsetTop - 30,
-      behavior: "smooth",
-    });
-  }
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light">
