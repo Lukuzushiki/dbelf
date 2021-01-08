@@ -9,8 +9,7 @@ export default function Header() {
           <div className="col-12 align-items-center justify-content-center">
             <h5>Hi, nice to meet ya</h5>
             <h1>
-              We make your dream come true <br /> and we will help your business
-              grow <br />
+              We make your dream come true and we will help your business grow
               with application and website development
             </h1>
 

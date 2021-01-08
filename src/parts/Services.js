@@ -16,7 +16,7 @@ export default function Project() {
 
         <div className="row">
           <Fade bottom delay={500}>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
                   <img className="img-service" src={Mobile} alt="service-1" />
@@ -30,13 +30,14 @@ export default function Project() {
           </Fade>
 
           <Fade top delay={1000}>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
                   <img className="img-service" src={Website} alt="service-1" />
-                  <h1>Mobile app development</h1>
+                  <h1>Web app development</h1>
                   <p>
-                    We help you to develop mobile application for your business
+                    We help you to build company profile, online store and
+                    personal website
                   </p>
                 </div>
               </div>
@@ -44,13 +45,14 @@ export default function Project() {
           </Fade>
 
           <Fade bottom delay={1500}>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
                   <img className="img-service" src={UiUx} alt="service-1" />
-                  <h1>Mobile app development</h1>
+                  <h1>Product Design</h1>
                   <p>
-                    We help you to develop mobile application for your business
+                    We help you build applications and websites with good visual
+                    and experience
                   </p>
                 </div>
               </div>

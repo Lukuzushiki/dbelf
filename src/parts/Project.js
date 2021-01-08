@@ -13,39 +13,64 @@ export default function Project(props) {
           {props.data.map((project, index) => {
             return (
               <>
-                <Fade bottom delay={500}>
-                  <div className="col-6">
-                    {index % 2 === 0 ? (
-                      <img
-                        className="img-project"
-                        src={project.imageUrl}
-                        alt={`project-${[index]}`}
-                      />
-                    ) : (
-                      <div className="card-detail">
-                        <h1>{project.title}</h1>
-                        <a href={project.urlProject}>{project.urlChild}</a>
+                {window.innerWidth >= 960 ? (
+                  <>
+                    <Fade bottom delay={500}>
+                      <div className="col-lg-6 col-sm-12">
+                        {index % 2 === 0 ? (
+                          <img
+                            className="img-project"
+                            src={project.imageUrl}
+                            alt={`project-${[index]}`}
+                          />
+                        ) : (
+                          <div className="card-detail">
+                            <h1>{project.title}</h1>
+                            <a href={project.urlProject}>{project.urlChild}</a>
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                </Fade>
+                    </Fade>
 
-                <Fade bottom delay={1000}>
-                  <div className="col-6">
-                    {index % 2 === 1 ? (
-                      <img
-                        className="img-project"
-                        src={project.imageUrl}
-                        alt={`project-${[index]}`}
-                      />
-                    ) : (
-                      <div className="card-detail">
-                        <h1>{project.title}</h1>
-                        <a href={project.urlProject}>{project.urlChild}</a>
+                    <Fade bottom delay={1000}>
+                      <div className="col-lg-6 col-sm-12">
+                        {index % 2 === 1 ? (
+                          <img
+                            className="img-project"
+                            src={project.imageUrl}
+                            alt={`project-${[index]}`}
+                          />
+                        ) : (
+                          <div className="card-detail">
+                            <h1>{project.title}</h1>
+                            <a href={project.urlProject}>{project.urlChild}</a>
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                </Fade>
+                    </Fade>
+                  </>
+                ) : (
+                  <>
+                    <Fade bottom delay={500}>
+                      <div className="col-lg-6 col-sm-12">
+                        <img
+                          className="img-project"
+                          src={project.imageUrl}
+                          alt={`project-${[index]}`}
+                        />
+                      </div>
+                    </Fade>
+
+                    <Fade bottom delay={1000}>
+                      <div className="col-lg-6 col-sm-12">
+                        <div className="card-detail">
+                          <h1>{project.title}</h1>
+                          <a href={project.urlProject}>{project.urlChild}</a>
+                        </div>
+                      </div>
+                    </Fade>
+                  </>
+                )}
               </>
             );
           })}

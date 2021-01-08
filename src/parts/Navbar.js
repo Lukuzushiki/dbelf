@@ -2,6 +2,9 @@ import React from "react";
 
 import Button from "elements/Button";
 import Brand from "./IconText";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 export default function Header(props) {
   function showProject() {
@@ -28,7 +31,8 @@ export default function Header(props) {
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light">
         <Brand />
-        <div className="collapse navbar-collapse">
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item`}>
               <Button className="nav-link" type="link" onClick={showProject}>

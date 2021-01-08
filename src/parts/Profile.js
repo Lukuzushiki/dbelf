@@ -18,13 +18,13 @@ export default function Profile(props) {
           <h1>Who we are?</h1>
           <p>
             DBELF is a Fullstack Developer and UI UX Designer Team based in
-            Pekanbaru, Indonesia. <br />
-            Our team consist of Febri as Programmer and Fadli as Designer.
+            Pekanbaru, Indonesia. Our team consist of Febri as Programmer and
+            Fadli as Designer.
           </p>
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-4">
+          <div className="col-lg-4 col-sm-12">
             <div className="card">
               <div className="card-body">
                 <img className="img-profile" src={Febri} alt="profile-1" />
@@ -63,7 +63,7 @@ export default function Profile(props) {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-sm-12">
             <div className="card">
               <div className="card-body">
                 <img className="img-profile" src={Fadli} alt="profile-1" />
