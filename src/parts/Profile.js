@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 import Fadli from "../assets/images/Fadli.png";
-import Febri from "../assets/images/Febri.png";
+import Febri from "../assets/images/febri.png";
 import Helfi from "../assets/images/Helfi.jpeg";
 import Facebook from "../assets/images/facebook.png";
 import Behance from "../assets/images/behance.png";
