@@ -61,7 +61,7 @@ export default function Project() {
         </div>
 
         <div className="text-center">
-          <Zoom delay={1800}>
+          <Zoom delay={1500}>
             <Button
               className="btn px-4 py-3"
               type="link"
