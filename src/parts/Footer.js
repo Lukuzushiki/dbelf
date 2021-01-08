@@ -16,7 +16,14 @@ export default function Footer(props) {
           </div>
 
           <div className="col-lg-3 col-sm-12 mb-5 align-self-center ml-auto">
-            <Button className="btn" isLight isLarge>
+            <Button
+              className="btn"
+              type="link"
+              isExternal
+              href="https://api.whatsapp.com/send?phone=+6281372118232"
+              isLight
+              isLarge
+            >
               Contact Us
             </Button>
           </div>

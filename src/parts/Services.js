@@ -64,8 +64,9 @@ export default function Project() {
           <Zoom delay={1800}>
             <Button
               className="btn px-4 py-3"
-              type="button"
-              href=""
+              type="link"
+              isExternal
+              href="https://api.whatsapp.com/send?phone=+6281372118232"
               isPrimary
               isLight
             >

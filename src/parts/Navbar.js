@@ -49,10 +49,11 @@ export default function Header(props) {
             <li className={`nav-item`}>
               <Button
                 className="btn px-4"
-                type="button"
+                type="link"
+                isExternal
+                href="https://api.whatsapp.com/send?phone=+6281372118232"
                 isLarge
                 isLight
-                onClick={showContact}
               >
                 Contact Us
               </Button>

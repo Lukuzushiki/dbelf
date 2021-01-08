@@ -1,5 +1,5 @@
-import React from "react";
 import Button from "elements/Button";
+import React from "react";
 
 export default function Header() {
   return (
@@ -13,7 +13,14 @@ export default function Header() {
               with application and website development
             </h1>
 
-            <Button className="btn px-4" type="button" isLarge isLight>
+            <Button
+              className="btn px-4"
+              type="link"
+              isExternal
+              href="https://api.whatsapp.com/send?phone=+6281372118232"
+              isLarge
+              isLight
+            >
               Contact Us
             </Button>
           </div>
