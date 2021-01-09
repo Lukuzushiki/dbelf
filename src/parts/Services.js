@@ -29,7 +29,7 @@ export default function Project() {
             </div>
           </Fade>
 
-          <Fade top delay={1000}>
+          <Fade top delay={window.innerWidth >= 960 ? 1000 : 700}>
             <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
@@ -44,7 +44,7 @@ export default function Project() {
             </div>
           </Fade>
 
-          <Fade bottom delay={1500}>
+          <Fade bottom delay={window.innerWidth >= 960 ? 1500 : 900}>
             <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">

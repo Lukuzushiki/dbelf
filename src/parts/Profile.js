@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 import Fadli from "../assets/images/Fadli.png";
 import Febri from "../assets/images/febri.png";
-import Helfi from "../assets/images/Helfi.jpeg";
+import Helfi from "../assets/images/Helfi.png";
 import Facebook from "../assets/images/facebook.png";
 import Behance from "../assets/images/behance.png";
 import Github from "../assets/images/github.png";
@@ -62,13 +62,20 @@ export default function Profile(props) {
                         alt="profile-1"
                       />
                     </a>
+                    <a href="https://www.behance.net/febriwardhana">
+                      <img
+                        className="social-media-logo"
+                        src={Behance}
+                        alt="profile-1"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </Fade>
 
-          <Fade top delay={1000}>
+          <Fade top delay={window.innerWidth >= 960 ? 1000 : 700}>
             <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
@@ -76,7 +83,7 @@ export default function Profile(props) {
                     <img className="img-profile" src={Helfi} alt="profile-1" />
                   </div>
                   <h1>Helfi Setiani</h1>
-                  <p>Web Programmer</p>
+                  <p>Programmer</p>
                   <div className="social-media">
                     <a href="https://www.instagram.com/helfisetiani11/">
                       <img
@@ -91,7 +98,7 @@ export default function Profile(props) {
             </div>
           </Fade>
 
-          <Fade bottom delay={1500}>
+          <Fade bottom delay={window.innerWidth >= 960 ? 1500 : 900}>
             <div className="col-lg-4 col-sm-12">
               <div className="card">
                 <div className="card-body">
